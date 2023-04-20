@@ -23,7 +23,7 @@ socket.on('chat message', (data) => {
 	const item = document.createElement('li')
 	item.innerHTML = `<span>${data.name}</span>: ${data.message}`
 
-	messages.prepend(item)
+	form.before(item)
 	input.focus()
 	window.scrollTo(0, document.body.scrollHeight)
 })
